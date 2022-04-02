@@ -14,8 +14,8 @@ foreach($str as $stroka)
     if ($i % 3 == 0) {
         $stroka = mb_strtoupper($stroka);
     }
-    for ($j = 1; $j < strlen($stroka); $j++) {
-        if (($j % 3 == 0) && ($j != 0)) {
+    for ($j = 0; $j < strlen($stroka); $j++) {
+        if ((($j +1)% 3 == 0) && ($j != 0)) {
             echo '<b style="color: purple">'.$stroka[$j].'</b>';
         } else echo $stroka[$j];
     }
