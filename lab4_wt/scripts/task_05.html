@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../styles/task_04.css" rel="stylesheet">
+
+    <?php include_once "task_05.php"; ?>
+
+    <title>Task 05</title>
+</head>
+<body>
+    <form action="task_05.php" method="post">
+        <ul>
+            <li>
+                <label for="plain-text">Plain text:</label>
+                <textarea id="plain-text" name="plainText"></textarea>
+            </li>
+            <li>
+                <label for="key">Key:</label>
+                <input type="text" id="key" name="key">
+            </li>
+            <li>
+                <label for="cipher">Cipher: </label>
+                <select id="cipher" name="cipher">
+                    <option value="aes">AES</option>
+                    <option value="des">DES</option>
+                </select>
+            </li>
+            <li class="button">
+                <button name="button-encode" type="submit">Encode</button>
+                <button name="button-decode" type="submit">Decode</button>
+            </li>
+        </ul>
+    </form>
+
+    <div class="block">
+        <p><a href="..">Return</a></p>
+    </div>
+
+</body>
+</html>

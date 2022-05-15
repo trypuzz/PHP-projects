@@ -17,11 +17,10 @@ function getDirectorySize($folderPath)
                 $size += getDirectorySize($folderPath . '/' . $file);
             }
         }
-
     }
     return $size;
 }
 
 $pie=explode("\\", $string);
 if($pie[1]!=null)
-{echo "\n", getDirectorySize($string);}
+    {echo "\n", getDirectorySize($string);}
